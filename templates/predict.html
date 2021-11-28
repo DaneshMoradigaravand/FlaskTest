@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row justify-content-md-center mb-4">
+        <h3 class='text-primary'>Prediction is {{ prediction }}</h3>
+        <h3 class='text-primary'>Car is {{ cars }}</h3>
+        <img src="data:image/png;base64, {{ plot_url }}">
+    
+    </div>
+
+
+{% endblock %}

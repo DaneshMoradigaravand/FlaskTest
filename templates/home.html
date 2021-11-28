@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <!-- Starts image section -->
+    <div class="row justify-content-md-center mb-4">
+        <img src="images/logo.png" alt="man ye paranadam" width="200" height="300">
+
+        <style>
+        h2 {text-align: center;}
+        </style>
+        <h2 class='text-primary'>Predict Plasmid Permissiveness </h2>
+        <h3>
+          <a href="https://www.birmingham.ac.uk/staff/profiles/cancer-genomic/moradigaravand-danesh.aspx"> Danesh Moradigaravand </a>
+        </h3>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <img src="{{url_for('static', filename='images/logo.png')}}" class="img-thumbnail" />
+                <div class="caption">
+                     <p><strong>Input 16srDNA sequence</strong></p>
+                   </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends image section -->
+    <body>
+
+    
+<!--<form class="form-horizontal" action = "/" method="post">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>-->
+    
+    <!-- Starts form section -->
+    <div class="form-container ">
+        <form class="form-horizontal" action = "/predict/" method="post">
+        
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="input_sequence">16s rDNA (permitted bases ACGT):</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="input_sequence" name="input_sequence">
+
+                <label for="cars">Maryam chiye:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Khers</option>
+    <option value="saab">Fok</option>
+    <option value="fiat" selected>Gerd</option>
+    <option value="audi">Kargadan</option>
+  </select>
+
+
+
+
+                <input type="submit">
+              </div>
+            </div>
+            
+          </form>
+        <!-- Ends form section -->
+        
+        
+    </div>
+
+   <h3>Our Flask Buttons<h3/>
+
+ <div>A Computer Science Portal for Geeks <span>GeeksforGeeks<span></div>
+
+
+
+{% endblock %}
